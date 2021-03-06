@@ -1,0 +1,54 @@
+.kanban-board{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,300px);
+    grid-gap: 10px;
+    height:auto;
+
+}
+
+.column-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:5px;
+    
+    
+}
+
+.column-items-container{
+    min-height: 65vh;
+    padding: 10px;
+    background: rgba(0,0,0,0.21);
+    
+    
+}
+
+.column-items-container.drag-over{
+    background: #001f426b;
+}
+
+.column-title{
+    border: 1px solid green;
+    text-align: center;
+}
+
+.item-card{
+    user-select: none;
+    padding:10px;
+    margin:0 0 5px 0;
+    min-height: 50px;
+    color:#fff;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter:blur(10px) ;
+    display: grid;
+    place-items: center;
+}
+
+.item-card.dragging{
+    background: rgba(0, 200, 200, 0.3);
+    
+}
+
+
+
+
