@@ -5,19 +5,28 @@ import {v4 as uuid} from 'uuid'
 import "../css/Kanban.css"
 
 const items = [
-    {id:uuid(),content:'first task'},
-    {id:uuid(),content:'second task'}
+    {id:uuid(),content:'Task 1'},
+    {id:uuid(),content:'Task 2'}
 ]
 
 const columns = {
        [uuid()] : {
-            
             name :"todo",
             items:items
         },
         [uuid()] :{
             
             name :"in progress",
+            items:[]
+        },
+        [uuid()] :{
+            
+            name :"Done",
+            items:[]
+        },
+        [uuid()] :{
+            
+            name :"Issues",
             items:[]
         }
     }
